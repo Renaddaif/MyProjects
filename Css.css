@@ -1,0 +1,346 @@
+footer ,header{ 
+    text-align: center; 
+    background-color: rgb(237, 237, 232); 
+    color: white; 
+    padding: 60px; 
+    border-radius: 15px; 
+  
+} 
+p{ 
+ text-align:Center; 
+} 
+ 
+body{ 
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #f1f1f1; 
+} 
+ 
+ 
+.logo{ 
+    float: left;     
+} 
+.san { 
+    display: flex; /* Use flexbox for easy centering */ 
+    justify-content: center; /* Center horizontally */ 
+    align-items: center; /* Center vertically */ 
+    height: 50vh; 
+   
+} 
+.san img{
+    border-radius: 15px; 
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); 
+
+}
+ 
+   .imgTitle img{ 
+        width: 100%; 
+        border-radius: 15px; 
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); 
+    } 
+.logo img{ 
+    width: 250px; 
+    position: absolute; 
+    top: 30px; 
+    left: 1px; 
+} 
+  .bordered { 
+  font-family:Times;
+            border: 2px solid #eae5e5; 
+   text-align: center; 
+   width:400px; 
+   margin: auto; 
+    border-radius: 15px; 
+        } 
+         
+.menu{ 
+    float: right; 
+} 
+ 
+.menu ul li{ 
+    float: left; /* يخليها في صف واحد */ 
+    list-style-type: none; /* تشيل نقط */ 
+    padding: 10px; 
+    margin: 0 5px; 
+    font-size: 14px; 
+    transition: all 0.5s ease-out; 
+  
+} 
+ 
+.menu ul li:hover{ 
+    background-color: #FBF5EF; 
+    border-radius: 10px; 
+} 
+ 
+a{ 
+    color: rgb(93, 25, 99); 
+    text-decoration: none;  
+} 
+ 
+footer{ 
+ padding-top:0.5px; 
+ padding-bottom:1px; 
+text-align: center; color: black; font-family:times ; 
+ font-size: 10px; font-weight: bold; font-style: italic; text-shadow: -2px 2px 3px whitesmoke; 
+ } 
+  
+ /*login page*/ 
+  
+   .boxLogin{ 
+    text-align: center; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 2px solid  #eae5e5; 
+    text-align: center; 
+    width:400px; 
+    margin: auto; 
+    border-radius: 15px; 
+   }
+.boxLogin .userN ,.userPass ,.submit-1{ 
+    color: rgb(90, 70, 106); 
+    margin: 20px; 
+} 
+ 
+.userN input , .userPass input ,.submit-1 input{ 
+   width: 45%; 
+   height: 35px;   
+} 
+ 
+.submit-1 input{ 
+    background-color: #5c5278; 
+    color: #eee; 
+    border: 0px; 
+    } 
+  /*contact page*/ 
+   
+  .cont{ 
+  font-family:Times; font-size: 15px; color:rgb(90, 70, 106); 
+  } 
+  .button-container { 
+          text-align: center; 
+          margin-top: 20px;  
+            } 
+ 
+    .button-container input { 
+          margin: 5px; 
+            } 
+ .bor{ 
+ font-family:Times; font-size:23px; text-shadow: -4px 4px 6px gray;color:rgb(90, 70, 106); 
+ } 
+  
+  /*Thank you page*/ 
+  .Thank{ 
+   font-family:Times; color:rgb(90, 70, 106);text-align:Center; 
+  }
+   /*Home page*/ 
+   
+.border img{
+	   border-radius: 15px;
+   }
+   
+.image-gallery {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+figure {
+  flex: 1; 
+  margin: 0; 
+  text-align: center; 
+}
+
+figcaption {
+	font-family:Times;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+.site{
+    text-decoration: underline;
+}
+/*rate page*/
+ 
+.Box_content{
+
+    padding-left: 20px;
+    margin: 10px 0;
+    padding-bottom: 19px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.Box_content p{
+    padding-left: 20px;
+       
+}
+
+p label input , p textarea {
+    text-align:left;
+    border: 1px solid #ccc;
+}
+
+.add_review textarea{
+width:100%;
+
+}
+#p_add{
+    border-bottom: 1px solid silver;
+}
+#submit input{
+        color: #000;
+        width: 50%;
+        line-height: 30px;
+        border-radius: 6px;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      position: relative;
+    border: 1px solid #332d2d ;
+    background-color:rgba(0, 0, 0, 0.1);
+     
+}
+#submit input:hover{
+background-color:rgba(0, 0, 0, 0.2);
+}
+
+.rname{
+    text-align: left;
+}
+
+
+.Box_content h3 , p{
+    padding-left: 20px;
+       
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.rate:not(:checked) > input {/*    hide radio button */
+    position:absolute;
+    right: -10px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {/* star*/
+    content: '★ ';
+}
+.rate > input:checked ~ label {/*color checked star*/
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #ffc700;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c2aa54;
+} 
+
+.ret img{/*size star img*/
+    width: 20px;
+}
+
+/*Add ,Edit ,Delete restaurant page*/ 
+main{
+    width: 90vh;
+    margin-right:auto;
+	margin-left:130px;
+    padding: 30px 20px;
+    min-height: calc(100vh - 255px - 58px);
+	text-align: center;
+}
+.deletetable{
+     width: 90vh;
+    margin: auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 255px - 58px);
+	text-align: center;
+}
+
+article{
+	font-family:serif;
+    background-color:rgb(237, 237, 232);
+    margin-top:50px;
+    margin-bottom: auto;
+    border: 1px solid #737474;
+    box-shadow: 1px 1px 5px #2D252A;
+    padding: 30px;
+    border-radius: 25px;
+    color: #5c5278;
+}
+
+.article_for_Table{
+min-width: min-content;
+
+}
+
+        
+th, td {
+    border: 1px solid #5c5278;
+    padding: 10px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+th {
+    background-color: #5c5278;
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto; 
+}
+
+/*Admin control */
+.action-button {
+    background-color: #5c5278;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 10px; 
+    cursor: pointer;
+    height: 20px;
+    width: 180px;
+    border-radius: 20px;
+
+}
+
+.p_cPanal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5c5278;
+}
+
+.conBoX {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controladmin{
+    width: 90vh;
+    margin: auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 255px - 58px);
+	text-align: center;
+
+}
