@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width" />
+   <title>Booki | Book title</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- TOP NAV WITH LOGO -->
+   <header>
+      <nav>
+         <div class="line">
+            <div class="left logo">
+               <a href="index.html"><img src="img/logo.png" alt="Logo" title="Logo" /></a>
+            </div>
+            <div class="top-nav">
+               <ul class="left">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li class="active-item"><a href="books.html">Books</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+               </ul>
+               <ul class="right">
+                  <li><a href="login.html">Log in</a></li>
+                  <li><a href="signup.html">Sign up</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="line breadcrumb">
+      <a href="index.html">Home</a> &raquo; <a href="books.html">Books</a> &raquo; Book Title
+   </div>
+
+   <section id="page-content">
+
+      <!-- Book Information -->
+      <div id="my-books">
+         <div class="content line">
+            <h2 class="section-title">Book Title</h2>
+
+            <div class="body_content">
+
+               <div  class="left-side">
+
+                  <div class="full-side ">
+                     <h3 class="section-title">Book Information</h3>
+                     <div id="book-info">
+                        <div class="left"><img src="img/books/book_04.jpg" alt=""></div>
+                        <article  class="right">
+                              <h4>Title</h4>
+                              <p>Book title</p>
+   
+                              <h4>Author</h4>
+                              <p>Book author</p>
+   
+                              <h4>Relase Year</h4>
+                              <p>2013</p>
+   
+                              <h4>Category</h4>
+                              <p>Book category</p>
+   
+                              <h4>Rating</h4>
+                              <p>8 / 10</p>
+   
+                              <h4>Description</h4>
+                              <p>Book Description</p>
+   
+                        </article>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="right-side">
+                  <div class="full-side">
+                     <h3 class="section-title">Users Comments:</h3>
+                     <div class="comments-list">
+                        <div class="comments-item">
+                           <img src="img/icons/avatar.jpg" alt="">
+                           <h4>User1</h4>
+                           <p>User comment on the book </p>
+                        </div>
+                        <div class="comments-item">
+                           <img src="img/icons/avatar.jpg" alt="">
+                           <h4>User2</h4>
+                           <p>User comment on the book </p>
+                        </div>
+                     </div>
+
+                     <form id="contact_form" name="contact_form" action="index.php" method="POST">
+                        <fieldset class="form-holder">
+                           <legend>Write a comment</legend>
+                           <label class="field-label" for="rating" style="display:inline-block; width:50%;">Rating [1-10]*</label>
+                           <input class="text-field" id="rating" name="rating" type="number" value="1" min="1" max="10"  required style="width:48%;"/>
+                           <label class="field-label" for="Message">Write your comment</label>
+                           <textarea class="text-area" cols="60" style="width: 100%" id="Message" name="Message"
+                              rows="4" required></textarea>
+                           <input name="sendButton" value="Send" id="sendButton" class="primary-button"
+                              style="display: bolck; margin-top: 20px; float: right" type="submit" />
+                        </fieldset>
+                     </form>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="line">
+         <div class="center">
+            <div class="copyright">© 2023. All Rights Reserved</div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

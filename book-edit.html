@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width" />
+   <title>Booki | Edit book</title>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   <!-- TOP NAV WITH LOGO -->
+   <header>
+      <nav>
+         <div class="line">
+            <div class="left logo">
+               <a href="index.html"><img src="img/logo.png" alt="Logo" title="Logo" /></a>
+            </div>
+            <div class="top-nav">
+               <ul class="left">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="books.html">Books</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+               </ul>
+               <ul class="right">
+                  <li><a href="login.html">Log in</a></li>
+                  <li><a href="signup.html">Sign up</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="line breadcrumb">
+      <a href="index.html">Home</a> &raquo; <a href="admin.html">Admin control</a> &raquo; Edit book
+   </div>
+
+   <section id="page-content">
+      <!-- Edit book -->
+      <div id="edit-book">
+         <div class="content line form">
+            <h2 class="section-title">Book title</h2>
+
+            <div class="body_content">
+               <div class="full-side">
+                  <form action="" method="POST">
+                     <fieldset class="form-holder">
+                        <legend>Book Information</legend>
+
+                        <label class="field-label" for="title">Title*</label>
+                        <input class="text-field" id="title" name="title" type="text" value="Book title" required />
+
+                        <label class="field-label" for="author">Author*</label>
+                        <input class="text-field" id="author" name="author" type="text" value="Book author" required />
+
+                        <label class="field-label" for="year">Release year*</label>
+                        <input class="text-field" id="year" name="year" type="number" value="2013" min="1900" max="2023"
+                           required />
+                     </fieldset>
+
+                     <fieldset class="form-holder">
+                        <legend>Other Information</legend>
+
+                        <label class="field-label" for="category">Category</label>
+                        <select class="text-field" name="category" id="category">
+                           <option selected>Category 1</option>
+                           <option>Category 2</option>
+                           <option>Category 3</option>
+                        </select>
+
+                        <label class="field-label" for="language">Book Language</label>
+                        <select class="text-field" name="language" id="language">
+                           <option selected>Arabic</option>
+                           <option>English</option>
+                        </select>
+
+                        <label class="field-label" for="rating">Book Rating [1-10]*</label>
+                        <input class="text-field" id="rating" name="rating" type="number" value="10" min="1" max="10"
+                           required />
+
+                        <label class="field-label" for="image">Book cover image</label>
+                        <input class="text-field" id="image" name="image" type="file" required />
+                     </fieldset>
+
+                     <fieldset class="form-holder">
+                        <legend>Description</legend>
+
+                        <label class="field-label" for="description">Description</label>
+                        <textarea class="text-area" cols="60" style="width: 100%" id="description" name="description" rows="4"> Book Description</textarea>
+
+                        <input name="sendButton" value="Edit book" id="sendButton" class="primary-button"
+                           style="display: bolck; margin-top: 20px; float: right" type="submit" />
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="line">
+         <div class="center">
+            <div class="copyright">© 2023. All Rights Reserved</div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

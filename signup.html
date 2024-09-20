@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width" />
+   <title>Booki | Sign up</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- TOP NAV WITH LOGO -->
+   <header>
+      <nav>
+         <div class="line">
+            <div class="left logo">
+               <a href="index.html"><img src="img/logo.png" alt="Logo" title="Logo" /></a>
+            </div>
+            <div class="top-nav">
+               <ul class="left">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="books.html">Books</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+               </ul>
+               <ul class="right">
+                  <li><a href="login.html">Log in</a></li>
+                  <li class="active-item"><a href="signup.html">Sign up</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="line breadcrumb">
+      <a href="index.html">Home</a> &raquo; Sign up
+   </div>
+
+   <section id="page-content">
+
+      <!-- Sign up -->
+      <div id="sign up">
+         <div class="content line form">
+            <h2 class="section-title">Sign up</h2>
+
+            <div class="body_content">
+
+               <div class="full-side">
+                  <form action="" method="POST">
+                     <fieldset class="form-holder">
+                        <legend>Personal Information</legend>
+
+                        <label class="field-label" for="FirstName">First Name*</label>
+                        <input class="text-field" id="FirstName" name="FirstName" type="text" value="" required>
+
+                        <label class="field-label" for="LastName">Last Name*</label>
+                        <input class="text-field" id="LastName" name="LastName" type="text" value="" required>
+
+                        <label class="field-label" for="Age">Age*</label>
+                        <input class="text-field" id="Age" name="Age" type="number" value="" required>
+
+                        <label class="field-label" for="Gender">Gender*</label>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male">Male</label> &nbsp;&nbsp;
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                     </fieldset>
+
+                     <fieldset class="form-holder">
+                        <legend>Account Information</legend>
+
+                        <label class="field-label" for="type">You are</label>
+                        <select class="text-field" name="type" id="type">
+                           <option>Author</option>
+                           <option>Other</option>
+                        </select>
+
+                        <label class="field-label" for="Email">Email*</label>
+                        <input class="text-field" id="Email" name="Email" type="text" value="" required>
+
+                        <label class="field-label" for="Password">Password*</label>
+                        <input class="text-field" id="Password" name="Password" type="password" value="" required>
+
+                        <label class="field-label" for="ConfirmPassword">Confirm Password*</label>
+                        <input class="text-field" id="ConfirmPassword" name="ConfirmPassword" type="password" value=""
+                           required>
+
+                        <label class="field-label" for="Phone">Phone*</label>
+                        <input class="text-field" id="Phone" name="Phone" type="text" value="">
+
+                        <input name="sendButton" value="Sign Up" id="sendButton" class="primary-button"
+                           style="display:bolck; margin-top: 20px; float: right;" type="submit">
+
+                     </fieldset>
+
+                  </form>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+      <div class="line">
+         <div class="center">
+            <div class="copyright">© 2023. All Rights Reserved</div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
